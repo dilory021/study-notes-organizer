@@ -1,0 +1,10 @@
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+node_modules/
+dist/
+build/
