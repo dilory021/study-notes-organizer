@@ -7,12 +7,22 @@ header
     background-color: #9BA4B4;
     color: #14274E;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 header nav a {
     color: #ffffff;
     text-decoration: none;
-    margin-right: 20px;
 }
 
 main {
@@ -56,10 +66,49 @@ section {
     background-color: #ffffff;
     padding: 10px;
     border: 1px solid #cbd5e1;
-    margin-bottom: 15px;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .layout {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
+        align-items: start;
+    }
+
+    aside {
+        position: sticky;
+        top: 20px;
+    }
 }
 
 img{
-    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card img {
+    margin-top: auto;
 }
