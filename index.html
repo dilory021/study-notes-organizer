@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Органайзер конспектів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,71 +15,103 @@
 <header>
     <h1>Органайзер конспектів</h1>
     <nav>
-        <a href="#theory">Теорія ймовірностей</a>
-        <a href="#kpi">Компоненти програмної інженерії</a>
-        <a href="#web">Програмування веб-застосувань</a>
+        <a href="#theory" class="nav-link subject-theory">Теорія ймовірностей</a>
+        <a href="#kpi" class="nav-link subject-kpi">Компоненти програмної інженерії</a>
+        <a href="#web" class="nav-link subject-web">Програмування веб-застосувань</a>
+        <a href="#db" class="nav-link subject-db">Бази даних</a>
+        <a href="#algo" class="nav-link subject-algo">Проєктування алгоритмів</a>
     </nav>
 </header>
 
 <div class="layout">
 
-<main>
-    <section id="theory">
-        <h2>Теорія ймовірностей</h2>
-        <div class="cards">
-        <article class="card">
-            <h3>Основні поняття теорії ймовірностей</h3>
-            <img src="assets/img/bodnarchuk.avif" alt="Іконка математичних формул">
-        </article>
-        <article class="card">
-            <h3>Ймовірність випадкової події</h3>
-            <img src="assets/img/dice.jpg" alt="Іконка гральних кубиків">
-        </article>
-        </div>
-    </section>
+    <main>
+        <section id="theory" class="subject subject-theory">
+            <h2>Теорія ймовірностей</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Основні поняття теорії ймовірностей</h3>
+                    <img src="assets/img/bodnarchuk.avif" alt="Іконка математичних формул">
+                </article>
+                <article class="card">
+                    <h3>Ймовірність випадкової події</h3>
+                    <img src="assets/img/dice.jpg" alt="Іконка гральних кубиків">
+                </article>
+            </div>
+        </section>
 
-    <section id="kpi">
-        <h2>Компоненти програмної інженерії</h2>
-        <div class="cards">
-        <article class="card">
-            <h3>Моделювання та аналіз вимог до ПЗ</h3>
-            <img src="assets/img/kpi1.png" alt="Іконка діаграми вимог до ПЗ">
-        </article>
-        <article class="card">
-            <h3>Вступ до Бізнес Аналізу</h3>
-            <img src="assets/img/kpi2.jpg" alt="Іконка картинки бізнес-аналізу">
-        </article>
-        </div>
-    </section>
+        <section id="kpi" class="subject subject-kpi">
+            <h2>Компоненти програмної інженерії</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Моделювання та аналіз вимог до ПЗ</h3>
+                    <img src="assets/img/kpi1.png" alt="Іконка діаграми вимог до ПЗ">
+                </article>
+                <article class="card">
+                    <h3>Вступ до Бізнес Аналізу</h3>
+                    <img src="assets/img/kpi2.jpg" alt="Іконка картинки бізнес-аналізу">
+                </article>
+            </div>
+        </section>
 
-    <section id="web">
-        <h2>Програмування веб-застосувань</h2>
-        <div class="cards">
-        <article class="card">
-            <h3>Організація мережі</h3>
-            <img src="assets/img/network.jpg" alt="Іконка мережі">
-        </article>
-        <article class="card">
-            <h3>Формати обміну даними</h3>
-            <img src="assets/img/web.jpeg" alt="Іконка форматів даних">
-        </article>
-        </div>
-    </section>
-</main>
+        <section id="web" class="subject subject-web">
+            <h2>Програмування веб-застосувань</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Організація мережі</h3>
+                    <img src="assets/img/network.jpg" alt="Іконка мережі">
+                </article>
+                <article class="card">
+                    <h3>Формати обміну даними</h3>
+                    <img src="assets/img/web.jpeg" alt="Іконка форматів даних">
+                </article>
+            </div>
+        </section>
 
-<aside>
-    <h2>Перегляд обраного конспекту</h2>
-    <div>
-        <h3>Обраний конспект: Основні поняття теорії ймовірностей</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, incidunt!</p>
-    </div>
-</aside>
+        <section id="db" class="subject subject-db">
+            <h2>Бази даних</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>ER-модель предметної області</h3>
+                    <img src="assets/img/er-model.jpg" alt="Іконка ER-діаграми">
+                </article>
+                <article class="card">
+                    <h3>Реляційна модель та SQL</h3>
+                    <img src="assets/img/database.png" alt="Іконка таблиці бази даних">
+                </article>
+            </div>
+        </section>
+
+        <section id="algo" class="subject subject-algo">
+            <h2>Проєктування алгоритмів</h2>
+            <div class="cards">
+                <article class="card">
+                    <h3>Аналіз складності алгоритмів</h3>
+                    <img src="assets/img/analysis.webp" alt="Іконка графіка складності алгоритму">
+                </article>
+                <article class="card">
+                    <h3>Алгоритми сортування</h3>
+                    <img src="assets/img/algorithms.png" alt="Іконка стовпчиків сортування">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Перегляд обраного конспекту</h2>
+        <div class="aside-note">
+            <span class="badge subject-theory">Теорія ймовірностей</span>
+            <h3>Обраний конспект: Основні поняття теорії ймовірностей</h3>
+            <p>Випадкова подія, простір елементарних подій, класичне та статистичне означення ймовірності. Конспект містить основні формули й приклади розв'язання задач.</p>
+            <a href="#theory" class="btn">Перейти до предмета</a>
+        </div>
+    </aside>
 
 </div>
 
 <footer>
     <p>Зроблено в навчальних цілях. Авторство: Дар'я Лісовська &copy; 2026</p>
 </footer>
-    <script src="js/app.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
